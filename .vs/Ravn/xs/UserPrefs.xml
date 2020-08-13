@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{24FBF6CB-AEC9-4DBD-B85F-52BBD0B8DEC8}|Ravn.blazorClient">
+  <MonoDevelop.Ide.ItemProperties.Ravn.blazorClient PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Ravn.blazorClient/wwwroot/css/site.css">
+    <Files>
+      <File FileName="Ravn.blazorClient/Pages/FetchData.razor" Line="10" Column="15" />
+      <File FileName="Ravn.blazorClient/Data/WeatherForecastService.cs" />
+      <File FileName="Ravn.blazorClient/Data/WeatherForecast.cs" />
+      <File FileName="Ravn.blazorClient/Pages/Index.razor" />
+      <File FileName="Ravn.blazorClient/wwwroot/css/site.css" Line="202" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Ravn" expanded="True">
+            <Node name="Ravn.blazorClient" expanded="True">
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True">
+                  <Node name="site.css" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
