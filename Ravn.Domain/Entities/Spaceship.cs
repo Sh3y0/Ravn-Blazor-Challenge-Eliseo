@@ -5,9 +5,9 @@ using Ravn.Domain.Utilities;
 
 namespace Ravn.Domain.Entities
 {
-    public class Spaceships
+    public class Spaceship
     {
-        public Spaceships()
+        public Spaceship()
         {
             Pilots = new List<string>();
             Films = new List<string>();

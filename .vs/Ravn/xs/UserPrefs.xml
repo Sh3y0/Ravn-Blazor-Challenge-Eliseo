@@ -1,13 +1,10 @@
 ﻿<Properties StartupConfiguration="{236A4D23-77E1-4581-811E-561C74C40330}|Ravn.BlazorClient">
   <MonoDevelop.Ide.Workbench ActiveDocument="Ravn.Domain/Entities/Spaceships.cs">
     <Files>
-      <File FileName="Ravn.Domain/Entities/Person.cs" Line="23" Column="10" />
-      <File FileName="Ravn.Domain/Entities/Planet.cs" Line="36" Column="9" />
-      <File FileName="Ravn.Domain/Entities/Specie.cs" Line="5" Column="1" />
-      <File FileName="Ravn.Domain/Entities/Vehicle.cs" Line="41" Column="40" />
-      <File FileName="Ravn.Domain/Utilities/Utils.cs" Line="16" Column="1" NotebookId="1" />
-      <File FileName="Ravn.Domain/Entities/Film.cs" Line="19" Column="10" NotebookId="1" />
-      <File FileName="Ravn.Domain/Entities/Spaceships.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Ravn.Domain/Utilities/Utils.cs" Line="16" Column="1" />
+      <File FileName="Ravn.Logic/Interfaces/ISWApiService.cs" Line="16" Column="23" />
+      <File FileName="Ravn.Logic/Utilities/BasePagination.cs" Line="14" Column="45" />
+      <File FileName="Ravn.Domain/Entities/Spaceships.cs" Line="8" Column="28" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,6 +14,10 @@
               <Node name="Entities" expanded="True">
                 <Node name="Spaceships.cs" selected="True" />
               </Node>
+            </Node>
+            <Node name="Ravn.Logic" expanded="True">
+              <Node name="Interfaces" expanded="True" />
+              <Node name="Utilities" expanded="True" />
             </Node>
           </Node>
         </State>

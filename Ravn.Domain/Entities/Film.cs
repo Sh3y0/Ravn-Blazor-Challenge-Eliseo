@@ -15,13 +15,7 @@ namespace Ravn.Domain.Entities
             Vehicles = new List<string>();
             Species = new List<string>();
         }
-        public int Id
-        {
-            get
-            {
-                return Utils.getId(Url);
-            }
-        }
+        public int Id => Utils.getId(Url);
         public string Title { get; set; }
         [JsonPropertyName("episode_id")]
         public int EpisodeId { get; set; }
