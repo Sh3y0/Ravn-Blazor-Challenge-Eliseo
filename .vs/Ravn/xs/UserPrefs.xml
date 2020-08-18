@@ -1,22 +1,22 @@
 ﻿<Properties StartupConfiguration="{236A4D23-77E1-4581-811E-561C74C40330}|Ravn.BlazorClient">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Ravn.BlazorClient/Component/PersonDetailComponent.razor">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Ravn.Domain/Entities/Spaceships.cs">
     <Files>
-      <File FileName="Ravn.BlazorClient/Pages/_Host.cshtml" Line="22" Column="29" />
-      <File FileName="Ravn.BlazorClient/Pages/Index.razor" Line="8" Column="51" />
-      <File FileName="Ravn.BlazorClient/Shared/MainLayout.razor" Line="1" Column="1" />
-      <File FileName="Ravn.BlazorClient/Component/PersonDetailComponent.razor" Line="6" Column="1" />
-      <File FileName="Ravn.BlazorClient/wwwroot/css/site.css" Line="36" Column="19" NotebookId="1" />
+      <File FileName="Ravn.Domain/Entities/Person.cs" Line="23" Column="10" />
+      <File FileName="Ravn.Domain/Entities/Planet.cs" Line="36" Column="9" />
+      <File FileName="Ravn.Domain/Entities/Specie.cs" Line="5" Column="1" />
+      <File FileName="Ravn.Domain/Entities/Vehicle.cs" Line="41" Column="40" />
+      <File FileName="Ravn.Domain/Utilities/Utils.cs" Line="16" Column="1" NotebookId="1" />
+      <File FileName="Ravn.Domain/Entities/Film.cs" Line="19" Column="10" NotebookId="1" />
+      <File FileName="Ravn.Domain/Entities/Spaceships.cs" Line="1" Column="1" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Ravn" expanded="True">
-            <Node name="Ravn.BlazorClient" expanded="True">
-              <Node name="Component" expanded="True">
-                <Node name="PersonDetailComponent.razor" expanded="True" selected="True" />
+            <Node name="Ravn.Domain" expanded="True">
+              <Node name="Entities" expanded="True">
+                <Node name="Spaceships.cs" selected="True" />
               </Node>
-              <Node name="Pages" expanded="True" />
-              <Node name="Shared" expanded="True" />
             </Node>
           </Node>
         </State>
