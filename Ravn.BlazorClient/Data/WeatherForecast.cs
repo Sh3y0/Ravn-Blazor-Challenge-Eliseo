@@ -1,6 +1,6 @@
 using System;
 
-namespace Ravn.blazorClient.Data
+namespace Ravn.BlazorClient.Data
 {
     public class WeatherForecast
     {

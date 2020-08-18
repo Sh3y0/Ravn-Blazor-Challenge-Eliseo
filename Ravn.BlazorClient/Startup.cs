@@ -9,9 +9,9 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Ravn.blazorClient.Data;
+using Ravn.BlazorClient.Data;
 
-namespace Ravn.blazorClient
+namespace Ravn.BlazorClient
 {
     public class Startup
     {

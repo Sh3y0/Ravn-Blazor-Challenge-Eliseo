@@ -9,7 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace Ravn.blazorClient
+namespace Ravn.BlazorClient
 {
     public class Program
     {

@@ -2,7 +2,7 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Ravn.blazorClient.Data
+namespace Ravn.BlazorClient.Data
 {
     public class WeatherForecastService
     {
