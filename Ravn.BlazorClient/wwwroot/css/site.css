@@ -189,3 +189,11 @@ header {
     .detail_container .data_cell .h2_default {
         text-align: right;
     }
+
+.empty_state {
+    flex: 1;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
