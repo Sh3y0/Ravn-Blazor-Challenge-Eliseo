@@ -1,26 +1,31 @@
 ﻿<Properties StartupConfiguration="{236A4D23-77E1-4581-811E-561C74C40330}|Ravn.BlazorClient">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Ravn.BlazorClient/Pages/Index.razor">
     <Files>
-      <File FileName="Ravn.Domain/Entities/Person.cs" Line="36" Column="46" />
-      <File FileName="Ravn.Domain/Utilities/Utils.cs" Line="16" Column="1" />
+      <File FileName="Ravn.BlazorClient/Pages/Index.razor" Line="85" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Ravn" expanded="True">
-            <Node name="Ravn.BlazorClient" expanded="True" />
-            <Node name="Ravn.Domain" expanded="True" />
-            <Node name="Ravn.Factory" expanded="True" />
-            <Node name="Ravn.Logic" expanded="True" />
+            <Node name="Ravn.BlazorClient" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="Index.razor" selected="True" />
+              </Node>
+            </Node>
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/eliseo/Documents/Eliseo/RVAN/Ravn-Blazor-Challenge-Eliseo/Rvan.Factory/Interfaces/IPersonLoader.cs" relfile="Rvan.Factory/Interfaces/IPersonLoader.cs" line="10" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.Ravn.BlazorClient PreferredExecutionTarget="/Applications/Microsoft Edge.app" />

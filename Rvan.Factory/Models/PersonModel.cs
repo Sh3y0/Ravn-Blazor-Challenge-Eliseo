@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Ravn.Domain.Entities;
+using System.Linq;
 
 namespace Ravn.Factory.Models
 {
@@ -27,5 +28,6 @@ namespace Ravn.Factory.Models
         public List<Specie> Species { get; set; }
         public List<Vehicle> Vehicles { get; set; }
         public List<Spaceship> Startships { get; set; }
+        public Specie specie => Species.FirstOrDefault();
     }
 }

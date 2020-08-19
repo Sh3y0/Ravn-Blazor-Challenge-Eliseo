@@ -31,16 +31,16 @@ namespace Ravn.Factory.Loaders
             }
 
             var response = await sWApiService.GetPeople(currentPage).ConfigureAwait(false);
-            if (!response.Result.Any()) return new BasePagination<PersonModel>();
+            if (!response.Results.Any()) return new BasePagination<PersonModel>();
 
             var result = new BasePagination<PersonModel>();
 
-            foreach (var person in response.Result)
+            foreach (var person in response.Results)
             {
-                result.Result.Add( await buildPersonObject(person));
+                result.Results.Add( await buildPersonObject(person));
             }
 
-            result.Counter = response.Counter;
+            result.Count = response.Count;
             result.Next = response.Next;
             response.Previous = response.Previous;
 

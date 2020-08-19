@@ -10,6 +10,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Ravn.BlazorClient.Data;
+using Ravn.Logic.Interfaces;
+using Ravn.Logic.Services;
+using Ravn.Factory.Interfaces;
+using Ravn.Factory.Loaders;
 
 namespace Ravn.BlazorClient
 {
@@ -28,7 +32,8 @@ namespace Ravn.BlazorClient
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
-            services.AddSingleton<WeatherForecastService>();
+            services.AddHttpClient<ISWApiService, SWApiService>();
+            services.AddScoped<IPersonLoader, PersonLoader>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

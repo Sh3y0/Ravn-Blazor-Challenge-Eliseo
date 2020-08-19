@@ -25,7 +25,7 @@ namespace Ravn.Logic.Services
 
         }
 
-        public Task<Planet> getHomeWorld(int WorldId)
+        public Task<Planet> getHomeWorld(int WorldId = 1)
         {
             return httpClient.GetDataAsync<Planet>($"planets/{WorldId}/");
         }
@@ -45,7 +45,7 @@ namespace Ravn.Logic.Services
             return httpClient.GetDataAsync<Spaceship>($"starships/{spaceShipId}/");
         }
 
-        public Task<Specie> GetSpecie(int speciaId)
+        public Task<Specie> GetSpecie(int speciaId = 1)
         {
             return httpClient.GetDataAsync<Specie>($"species/{speciaId}/");
 

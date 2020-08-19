@@ -6,12 +6,12 @@ namespace Ravn.Logic.Utilities
     {
         public BasePagination()
         {
-            Result = new List<TModel>();
+            Results = new List<TModel>();
         }
 
-        public int Counter { get; set; }
+        public int Count { get; set; }
         public string Next { get; set; }
         public string Previous { get; set; }
-        public List<TModel> Result { get; set; }
+        public List<TModel> Results { get; set; }
     }
 }
