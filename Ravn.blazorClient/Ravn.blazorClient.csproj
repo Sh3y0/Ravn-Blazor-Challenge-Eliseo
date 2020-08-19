@@ -5,6 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\assets\" />
+    <Folder Include="Component\" />
   </ItemGroup>
 </Project>
