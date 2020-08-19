@@ -1,0 +1,99 @@
+﻿@page "/"
+@using Ravn.BlazorClient.Component;
+@using Ravn.Factory.Models;
+@using Ravn.Factory.Loaders;
+@using Ravn.Factory.Interfaces;
+
+<div class="character_list_container">
+    <ul class="person_list">
+        @foreach (var item in peopleList)
+        {
+            <li class="person_cell @((selectedPerson?.Id == item.Id)? "selected": "")" @onclick="@(e  => SetSelectedPerson(item))">
+                <div>
+                    <h2 class="h2_default">@item.Name</h2>
+                    <p class="p1_low_emphasis">@(item.specie?.Name ?? "Human") from @item.Homeworld.Name</p>
+                </div>
+            </li>
+        }
+        @if (Loading)
+        {
+            <li class="loader">
+                <div class="indicator">
+                    <img src="/css/images/loader.gif" />
+                    <h2 class="h2_low_emphasis">Loading</h2>
+                </div>
+            </li>
+        }
+        @if (ShowMore)
+        {
+            <li class="loader">
+                <div class="indicator">
+                    <a @onclick="LoadPeople" class="h2_low_emphasis">Load More</a>
+                </div>
+            </li>
+        }
+        @if (ShowError)
+        {
+            <li class="loader">
+                <div class="indicator">
+                    <h2 class="h2_high_emphasis">Failed to Load Data</h2>
+                </div>
+            </li>
+        }
+    </ul>
+</div>
+
+@if (selectedPerson?.Id != 0)
+{
+    <PersonDetailComponent Person="@selectedPerson" ></PersonDetailComponent>
+
+}
+else
+{
+    <EmptyState></EmptyState>
+
+}
+
+@code {
+    [Inject]
+    protected IPersonLoader personLoader { get; set; }
+
+    private string NextUrl;
+    public bool Loading;
+    public bool ShowMore => !string.IsNullOrEmpty(NextUrl) && !Loading;
+    public bool ShowError = false;
+
+    private List<PersonModel> peopleList = new List<PersonModel>();
+    public PersonModel selectedPerson = new PersonModel();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadPeople();
+    }
+
+
+    public async Task LoadPeople()
+    {
+        try
+        {
+            Loading = true;
+            var response = await personLoader.LoadPerson(NextUrl);
+            peopleList.AddRange(response.Results);
+            NextUrl = response.Next;
+        }
+        catch (Exception)
+        {
+            ShowError = true;
+        }
+        finally
+        {
+            Loading = false;
+        }
+    }
+
+    private void SetSelectedPerson(PersonModel person)
+    {
+        selectedPerson = person;
+    }
+
+}

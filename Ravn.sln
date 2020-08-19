@@ -1,0 +1,35 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ravn.Logic", "Ravn.Logic\Ravn.Logic.csproj", "{A1A3A1CB-A054-4457-B221-ABDB143AB3F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ravn.Domain", "Ravn.Domain\Ravn.Domain.csproj", "{328E7F53-FDD6-4754-8243-4DEC32651201}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ravn.BlazorClient", "Ravn.BlazorClient\Ravn.BlazorClient.csproj", "{236A4D23-77E1-4581-811E-561C74C40330}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ravn.Factory", "Rvan.Factory\Ravn.Factory.csproj", "{91F5BEBB-292A-49AB-AC31-D61F51DE55AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1A3A1CB-A054-4457-B221-ABDB143AB3F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1A3A1CB-A054-4457-B221-ABDB143AB3F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1A3A1CB-A054-4457-B221-ABDB143AB3F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1A3A1CB-A054-4457-B221-ABDB143AB3F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{328E7F53-FDD6-4754-8243-4DEC32651201}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{328E7F53-FDD6-4754-8243-4DEC32651201}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{328E7F53-FDD6-4754-8243-4DEC32651201}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{328E7F53-FDD6-4754-8243-4DEC32651201}.Release|Any CPU.Build.0 = Release|Any CPU
+		{236A4D23-77E1-4581-811E-561C74C40330}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{236A4D23-77E1-4581-811E-561C74C40330}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{236A4D23-77E1-4581-811E-561C74C40330}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{236A4D23-77E1-4581-811E-561C74C40330}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91F5BEBB-292A-49AB-AC31-D61F51DE55AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91F5BEBB-292A-49AB-AC31-D61F51DE55AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91F5BEBB-292A-49AB-AC31-D61F51DE55AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91F5BEBB-292A-49AB-AC31-D61F51DE55AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

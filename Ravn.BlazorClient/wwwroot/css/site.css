@@ -1,0 +1,215 @@
+@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
+
+
+/*colors*/
+:root {
+    --ravn-black: #121212;
+    --text-dark: #333333;
+    --text-light: #828282;
+    --text-emphasis: #EC5757;
+}
+
+a {
+    cursor: pointer;
+}
+
+html, body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/*text style*/
+
+h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    margin: 0px;
+    letter-spacing: 0.0125em;
+}
+
+.h2_default {
+    color: var(--text-dark);
+}
+
+.h2_low_emphasis {
+    color: var(--text-light);
+}
+
+.h2_high_emphasis {
+    color: var(--text-emphasis);
+}
+
+.p1_default {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.0125em;
+    color: var(--text-dark);
+    margin: 0px;
+}
+
+.p1_low_emphasis {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.0125em;
+    color: var(--text-light);
+    margin: 0px;
+}
+
+/**/
+/*COMPONENTES*/
+
+/*loading indicator*/
+
+.loader {
+    padding: 16px;
+    display: grid;
+}
+
+    .loader .indicator {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.0125em;
+        color: var(--text-light);
+        margin: 0 auto;
+    }
+
+        .loader .indicator img {
+            margin-right: 8px;
+        }
+
+/*header section*/
+
+header {
+    display: inline-block;
+    width: 100%;
+    height: 52px;
+    background: var(--ravn-black);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+    header h1 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 29px;
+        letter-spacing: 0.0125em;
+        color: #F2F2F2;
+        margin-left: 33px;
+    }
+
+.body_container {
+    width: 100%;
+    display: flex;
+    height: calc(100% - 52px);
+    padding: 0px;
+}
+
+    .body_container .character_list_container {
+        width: 350px;
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+        height: 100%;
+        margin: 0px;
+        overflow-y: auto;
+    }
+
+.person_list {
+    list-style: none;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+    .person_list .person_cell {
+        background-image: url(/css/images/list-arrow.png);
+        background-repeat: no-repeat;
+        background-position-x: calc(100% - 20px);
+        background-position-y: center;
+        padding-top: 16px;
+        cursor: pointer;
+        padding-left: 16px;
+    }
+
+    .person_list .selected {
+        background-color: #F1F1F1;
+    }
+
+    .person_list .person_cell div {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding-bottom: 16px;
+    }
+
+#blazor-error-ui {
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+#blazor-error-ui .dismiss {
+    cursor: pointer;
+    position: absolute;
+    right: 0.75rem;
+    top: 0.5rem;
+}
+
+.detail_container {
+    padding: 0px 100px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+    .detail_container .h2_default {
+        margin-top: 32px;
+        margin-bottom: 8px;
+    }
+
+.detail_container .data_cell {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display:flex;
+}
+    .detail_container .data_cell h2 {
+        flex: 1;
+        margin: 14px 0px;
+    }
+
+    .detail_container .data_cell .h2_low_emphasis {
+        text-align: left;
+        text-transform: capitalize;
+    }
+
+    .detail_container .data_cell .h2_default {
+        text-align: right;
+        text-transform: capitalize;
+    }
+
+.empty_state {
+    flex: 1;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

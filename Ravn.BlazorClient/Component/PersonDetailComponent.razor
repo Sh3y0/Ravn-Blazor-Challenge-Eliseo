@@ -1,0 +1,76 @@
+﻿@using Microsoft.AspNetCore.Components;
+@using System.Linq;
+@using Ravn.Factory.Models;
+
+    <div class="detail_container">
+        <h2 class="h2_default">General Information</h2>
+        <div class="data_cell">
+            <h2 class="h2_low_emphasis">Name</h2>
+            <h2 class="h2_default">@Person.Name</h2>
+        </div>
+        <div class="data_cell">
+            <h2 class="h2_low_emphasis">Eye Color</h2>
+            <h2 class="h2_default">@Person.EyeColor</h2>
+        </div>
+        <div class="data_cell">
+            <h2 class="h2_low_emphasis">Hair Color</h2>
+            <h2 class="h2_default">@Person.HairColor</h2>
+        </div>
+        <div class="data_cell">
+            <h2 class="h2_low_emphasis">Skin Color</h2>
+            <h2 class="h2_default">@Person.SkinColor</h2>
+        </div>
+        <div class="data_cell">
+            <h2 class="h2_low_emphasis">Birth Year</h2>
+            <h2 class="h2_default">@Person.BirthYear</h2>
+        </div>
+
+        @if (Person.Films.Count() > 0)
+        {
+            <h2 class="h2_default">Films</h2>
+            foreach (var item in Person.Films)
+            {
+                <div class="data_cell">
+                    <h2 class="h2_low_emphasis">@item.Title.</h2>
+                </div>
+            }
+        }
+
+        @if (Person.Species.Count() > 0)
+        {
+            <h2 class="h2_default">Species</h2>
+            foreach (var item in Person.Species)
+            {
+                <div class="data_cell">
+                    <h2 class="h2_low_emphasis">@item.Name.</h2>
+                </div>
+            }
+        }
+
+        @if (Person.Vehicles.Count() > 0)
+        {
+            <h2 class="h2_default">Species</h2>
+            foreach (var item in Person.Vehicles)
+            {
+                <div class="data_cell">
+                    <h2 class="h2_low_emphasis">@item.Name</h2>
+                </div>
+            }
+        }
+
+        @if (Person.Startships.Count() > 0)
+        {
+            <h2 class="h2_default">Startships</h2>
+            foreach (var item in Person.Startships)
+            {
+                <div class="data_cell">
+                    <h2 class="h2_low_emphasis">@item.Name</h2>
+                </div>
+            }
+        }
+    </div>
+
+@code {
+    [Parameter]
+    public PersonModel Person { get; set; }
+}
