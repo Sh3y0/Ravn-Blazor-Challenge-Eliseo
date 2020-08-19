@@ -1,22 +1,29 @@
 ﻿<Properties StartupConfiguration="{236A4D23-77E1-4581-811E-561C74C40330}|Ravn.BlazorClient">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Ravn.BlazorClient/Pages/Index.razor">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Ravn.BlazorClient/wwwroot/css/site.css">
     <Files>
-      <File FileName="Ravn.BlazorClient/Pages/Index.razor" Line="85" Column="1" />
+      <File FileName="Ravn.BlazorClient/wwwroot/css/site.css" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Ravn" expanded="True">
             <Node name="Ravn.BlazorClient" expanded="True">
-              <Node name="Pages" expanded="True">
-                <Node name="Index.razor" selected="True" />
+              <Node name="Component" expanded="True" />
+              <Node name="Pages" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True">
+                  <Node name="site.css" selected="True" />
+                </Node>
               </Node>
+            </Node>
+            <Node name="Ravn.Domain" expanded="True">
+              <Node name="Entities" expanded="True" />
+            </Node>
+            <Node name="Ravn.Factory" expanded="True">
+              <Node name="Models" expanded="True" />
             </Node>
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

@@ -8,9 +8,11 @@
     <ul class="person_list">
         @foreach (var item in peopleList)
         {
-            <li class="person_cell">
-                <h2 class="h2_default">@item.Name</h2>
-                <p class="p1_low_emphasis">@(item.specie?.Name ?? "Human") from @item.Homeworld.Name</p>
+            <li class="person_cell @((selectedPerson?.Id == item.Id)? "selected": "")" @onclick="@(e  => SetSelectedPerson(item))">
+                <div>
+                    <h2 class="h2_default">@item.Name</h2>
+                    <p class="p1_low_emphasis">@(item.specie?.Name ?? "Human") from @item.Homeworld.Name</p>
+                </div>
             </li>
         }
         @if (Loading)
@@ -41,8 +43,16 @@
     </ul>
 </div>
 
-@*<PersonDetailComponent></PersonDetailComponent>*@
-<EmptyState></EmptyState>
+@if (selectedPerson?.Id != 0)
+{
+    <PersonDetailComponent Person="@selectedPerson" ></PersonDetailComponent>
+
+}
+else
+{
+    <EmptyState></EmptyState>
+
+}
 
 @code {
     [Inject]
@@ -79,6 +89,11 @@
         {
             Loading = false;
         }
+    }
+
+    private void SetSelectedPerson(PersonModel person)
+    {
+        selectedPerson = person;
     }
 
 }
