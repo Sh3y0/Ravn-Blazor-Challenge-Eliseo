@@ -1,11 +1,10 @@
 # RVAN SWAPI
 
-![GitHub](https://img.shields.io/badge/Language-C#-brightgreen.svg) ![GitHub](https://img.shields.io/badge/Platform-.NET-blue.svg)
+![GitHub](https://img.shields.io/badge/Language-C%Sharp-brightgreen.svg) ![GitHub](https://img.shields.io/badge/Platform-.NET-blue.svg)
 
 ## Introduction
 
-:RVAN SWAPI:
-It is a web client made in Blazor that is in charge of exploring all the information of the people of the Starwars universe
+**RVAN SWAMPY**: Is a web client demoi made in Blazor that allows you to explore all the information of the people of the Starwars universe
 
 For more information about [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor)
 
