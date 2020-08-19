@@ -1,9 +1,15 @@
 ﻿@inherits LayoutComponentBase
 
+<div class="sidebar">
+    <NavMenu />
+</div>
 
-<header>
-    <h1>Ravn Star Wars  Registry</h1>
-</header>
-<div class="body_container">
-    @Body
+<div class="main">
+    <div class="top-row px-4">
+        <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
+    </div>
+
+    <div class="content px-4">
+        @Body
+    </div>
 </div>
