@@ -1,6 +1,6 @@
 # RVAN SWAPI
 
-![GitHub](https://img.shields.io/badge/Language-C%Sharp-brightgreen.svg) ![GitHub](https://img.shields.io/badge/Platform-.NET-blue.svg)
+![GitHub](https://img.shields.io/badge/Language-CSharp-brightgreen.svg) ![GitHub](https://img.shields.io/badge/Platform-.NET-blue.svg)
 
 ## Introduction
 
